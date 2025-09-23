@@ -11,104 +11,90 @@
       content="Portfolio d'Abdoul Salam DIALLO - Étudiant en Informatique"
     />
     <meta name="author" content="Abdoul Salam DIALLO" />
-    <title>Portfolio Abdoul Salam DIALLO</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
+    <title>Portfolio - Abdoul Salam DIALLO</title>
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
     />
+    <!-- FontAwesome -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
-      type="text/css"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/styleMenu.css" rel="stylesheet" />
+
     <style>
-      /* Masthead */
-      .masthead {
-        min-height: 100vh;
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header.masthead {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(135deg, #20c997, #0d6efd);
+      }
+
+      header.masthead img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: 4px solid #fff;
+      }
+
+      header.masthead h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .divider-custom {
+        margin: 1.25rem auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(120deg, #1abc9c 0%, #2980b9 100%);
-        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
-        border-radius: 0 0 40px 40px;
-      }
-      .masthead-avatar {
-        border: 6px solid #fff;
-        box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18);
-        margin-bottom: 2rem;
-        background: #fff;
-      }
-      .masthead-heading {
-        font-size: 2.8rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        margin-bottom: 1.2rem;
-      }
-      .masthead-subheading {
-        font-size: 1.3rem;
-        font-weight: 400;
-        margin-top: 1rem;
-        color: #e0f7fa;
-      }
-      .divider-custom {
-        margin: 1.5rem 0;
-      }
-      .divider-custom-icon {
-        color: #fff;
-        font-size: 2rem;
-      }
-      .divider-custom-line {
-        width: 60px;
-        height: 4px;
-        background: #fff;
-        display: inline-block;
-        border-radius: 2px;
-        margin: 0 10px;
-      }
-      /* Footer stylé */
-      .footer {
-        background: #2c3e50;
-        color: #fff;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        margin-top: 40px;
-        box-shadow: 0 -4px 24px rgba(44, 62, 80, 0.1);
-      }
-      .footer a {
-        color: #1abc9c;
-        text-decoration: underline;
-      }
-      .footer a:hover {
-        color: #16a085;
-      }
-      .copyright {
-        background: #1a252f;
-      }
-      /* Responsive */
-      @media (max-width: 900px) {
-        .masthead-heading {
-          font-size: 2rem;
-        }
-        .masthead-avatar {
-          max-width: 140px;
-        }
-        .footer .row > div {
-          margin-bottom: 2rem;
-        }
       }
 
+      .divider-custom-line {
+        width: 100px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 1rem;
+        margin: 0 1rem;
+      }
+
+      .divider-custom-icon {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+
+      .hero-buttons .btn {
+        border-radius: 30px;
+        font-weight: 600;
+        padding: 0.6rem 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .hero-buttons .btn:hover {
+        background: #1abc9c;
+        color: #fff;
+        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.2);
+      }
+
+      nav.navbar {
+        background-color: transparent !important;
+      }
+
+      nav.navbar .nav-link {
+        color: white !important;
+        font-weight: 500;
+      }
+
+      nav.navbar .nav-link:hover {
+        color: #d1ecf1 !important;
+      }
       /* Menu navbar amélioré */
       #mainNav {
         box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
@@ -163,18 +149,11 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Navigation identique, mais liens modifiés : -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <span style="display: block; line-height: 1.1"
-            >ABDOUL<br />SALAM<br />DIALLO</span
-          >
-        </a>
+        <a class="navbar-brand" href="index.html">Portfolio</a>
         <button
           class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
           type="button"
@@ -192,21 +171,10 @@
               <a class="nav-link" href="projets.html">Projets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" style="white-space: nowrap"
-                >À propos</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="education.html">Formations</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="attestations.html">Attestations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="languages.html">Langues</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="interests.html" style="white-space: nowrap">Centres d'intérêt</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -215,30 +183,33 @@
         </div>
       </div>
     </nav>
-    <!-- Masthead (présentation) -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container d-flex align-items-center flex-column">
-        <img
-          class="masthead-avatar mb-5"
-          src="images/profil.png"
-          alt="Photo d'Abdoul Salam DIALLO"
-          style="border-radius: 50%; max-width: 220px"
-        />
-        <h1 class="masthead-heading text-uppercase mb-0">
-          Abdoul Salam DIALLO
-        </h1>
-        <div class="divider-custom divider-light">
+
+    <!-- HERO -->
+    <header class="masthead">
+      <div class="container">
+        <img src="images/profil.png" alt="Photo Abdoul Salam DIALLO" />
+        <h1>Abdoul Salam DIALLO</h1>
+        <div class="divider-custom">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <i class="fas fa-star divider-custom-icon"></i>
           <div class="divider-custom-line"></div>
         </div>
-        <p class="masthead-subheading font-weight-light mb-0">
+        <p>
           Étudiant en Master 1 - Ingénierie des Données & Intelligence
           Artificielle
         </p>
+
+        <!-- ✅ BOUTONS AJOUTÉS -->
+        <div class="hero-buttons mt-4">
+          <a href="about.html" class="btn btn-light mx-2">Voir mon profil</a>
+          <a href="languages.html" class="btn btn-light mx-2">Voir mes langues</a>
+          <a href="interests.html" class="btn btn-light mx-2">Voir mes centres d'intérêt</a>
+        </div>
       </div>
     </header>
-    <!-- Footer amélioré -->
+
+    <!-- SECTIONS -->
+    <!-- Pied de page stylisé -->
     <footer
       class="footer text-center"
       style="
@@ -251,11 +222,12 @@
     >
       <div class="container py-5">
         <div class="row">
-          <!-- Footer Location-->
+          <!-- Colonne localisation -->
           <div
             class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
           >
             <div class="mb-3">
+              <!-- Icône localisation -->
               <i class="fas fa-map-marker-alt fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -263,11 +235,12 @@
             </h4>
             <p class="lead mb-0">Thiès, Sénégal</p>
           </div>
-          <!-- Footer Social Icons-->
+          <!-- Colonne contact -->
           <div
             class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
           >
             <div class="mb-3">
+              <!-- Icône email -->
               <i class="fas fa-envelope fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -301,9 +274,10 @@
               </a>
             </p>
           </div>
-          <!-- Footer About Text-->
+          <!-- Colonne à propos -->
           <div class="col-lg-4 d-flex flex-column align-items-center">
             <div class="mb-3">
+              <!-- Icône étudiant -->
               <i class="fas fa-user-graduate fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -316,6 +290,7 @@
             </p>
           </div>
         </div>
+        <!-- Ligne de séparation -->
         <hr
           style="
             border-top: 1px solid #fff;
@@ -323,6 +298,7 @@
             margin: 2.5rem 0 1.5rem 0;
           "
         />
+        <!-- Section copyright -->
         <div class="copyright py-2 text-center text-white">
           <small style="letter-spacing: 1px"
             >&copy; 2024 Abdoul Salam DIALLO. Tous droits réservés.</small
@@ -330,9 +306,9 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS : gestion du menu responsive et des composants -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS : script personnalisé du thème -->
     <script src="js/scripts.js"></script>
   </body>
 </html>

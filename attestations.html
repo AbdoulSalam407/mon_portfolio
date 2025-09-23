@@ -83,6 +83,20 @@
         background: #1a252f;
       }
       /* Menu navbar amélioré */
+      /* Menu navbar amélioré */
+      nav.navbar {
+        background-color: transparent !important;
+      }
+
+      nav.navbar .nav-link {
+        color: white !important;
+        font-weight: 500;
+      }
+
+      nav.navbar .nav-link:hover {
+        color: #d1ecf1 !important;
+      }
+      /* Menu navbar amélioré */
       #mainNav {
         box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
         background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%) !important;
@@ -136,22 +150,40 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Navigation identique -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <span style="display: block; line-height: 1.1"
-            >ABDOUL<br />SALAM<br />DIALLO</span
-          >
-        </a>
+        <a class="navbar-brand" href="index.html">Portfolio</a>
         <button
           class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
           type="button"
           data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="projets.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Formations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attestations.html">Attestations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
           data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
