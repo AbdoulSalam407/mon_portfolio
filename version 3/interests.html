@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+<!-- Déclaration du type de document HTML5 -->
 <html lang="fr">
+  <!-- Début du document HTML, langue française -->
   <head>
+    <!-- Définition du jeu de caractères utilisé -->
     <meta charset="utf-8" />
+    <!-- Balise meta pour le responsive design (affichage adapté mobile/desktop) -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Projets de Abdoul Salam DIALLO" />
+    <!-- Description du site pour les moteurs de recherche -->
+    <meta
+      name="description"
+      content="Centres d'intérêt de Abdoul Salam DIALLO"
+    />
+    <!-- Auteur du site -->
     <meta name="author" content="Abdoul Salam DIALLO" />
-    <title>Projets - Portfolio Abdoul Salam DIALLO</title>
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <title>Centres d'intérêt - Portfolio Abdoul Salam DIALLO</title>
+    <!-- Favicon (icône de l'onglet du navigateur) -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google Fonts : Montserrat et Lato pour la typographie -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
@@ -20,13 +32,89 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- Feuilles de style personnalisées (incluant Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/styleMenu.css" rel="stylesheet" />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
     <style>
+      /* Section intérêts améliorée */
+      #interests {
+        border-radius: 18px; /* Coins arrondis */
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12); /* Ombre portée */
+        margin-bottom: 40px; /* Marge en bas */
+        padding-bottom: 30px; /* Padding en bas */
+        background: #f8f9fa; /* Couleur de fond */
+      }
+      #interests h2 {
+        letter-spacing: 2px; /* Espacement des lettres */
+        font-weight: 700; /* Texte en gras */
+      }
+      #interests .divider-custom-icon {
+        color: #1abc9c; /* Couleur de l'icône du séparateur */
+      }
+      #interests ul {
+        display: flex; /* Flexbox pour aligner les éléments */
+        flex-wrap: wrap; /* Retour à la ligne si besoin */
+        gap: 2rem; /* Espace entre les éléments */
+        justify-content: center; /* Centrage horizontal */
+        padding: 0; /* Pas de padding */
+        list-style: none; /* Pas de puces */
+        margin-top: 2rem; /* Marge en haut */
+      }
+      #interests li {
+        background: #fff; /* Fond blanc */
+        border-radius: 12px; /* Coins arrondis */
+        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08); /* Ombre */
+        padding: 1.2rem 1rem 1rem 1rem; /* Padding interne */
+        margin-bottom: 1rem; /* Marge en bas */
+        width: 320px; /* Largeur fixe */
+        max-width: 95vw; /* Largeur max responsive */
+        text-align: center; /* Texte centré */
+        font-size: 1.13rem; /* Taille du texte */
+        color: #2c3e50; /* Couleur du texte */
+        transition: transform 0.2s, box-shadow 0.2s; /* Animation au survol */
+        position: relative; /* Pour le pseudo-élément */
+      }
+      #interests li:before {
+        content: "★"; /* Icône étoile avant chaque intérêt */
+        color: #1abc9c; /* Couleur de l'étoile */
+        position: absolute; /* Position absolue */
+        left: 18px; /* Décalage à gauche */
+        top: 12px; /* Décalage en haut */
+        font-size: 1.1rem; /* Taille de l'étoile */
+        opacity: 0.7; /* Transparence */
+      }
+      #interests li:hover {
+        transform: translateY(-6px) scale(1.03); /* Effet de survol */
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18); /* Ombre plus forte */
+        background: #e8f6f3; /* Fond au survol */
+      }
+      @media (max-width: 900px) {
+        #interests ul {
+          flex-direction: column; /* Colonne sur mobile */
+          align-items: center; /* Centrage vertical */
+        }
+        #interests li {
+          width: 98vw; /* Largeur max sur mobile */
+        }
+      }
+      /* Footer stylé */
+      .footer {
+        background: #2c3e50; /* Couleur de fond */
+        color: #fff; /* Couleur du texte */
+        padding-top: 40px; /* Padding haut */
+        padding-bottom: 30px; /* Padding bas */
+        margin-top: 40px; /* Marge haut */
+      }
+      .footer a {
+        color: #1abc9c; /* Couleur des liens */
+        text-decoration: underline; /* Soulignement */
+      }
+      .footer a:hover {
+        color: #16a085; /* Couleur au survol */
+      }
+      .copyright {
+        background: #1a252f; /* Fond plus foncé pour la section copyright */
+      }
       /* Menu navbar amélioré */
       /* Menu navbar amélioré */
       nav.navbar {
@@ -44,7 +132,7 @@
       /* Menu navbar amélioré */
       #mainNav {
         box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%) !important;
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%) !important;
         border-bottom-left-radius: 18px;
         border-bottom-right-radius: 18px;
         transition: background 0.3s;
@@ -74,7 +162,7 @@
       }
       #mainNav .navbar-toggler {
         border: none;
-        background: #2980b9 !important;
+        background: #1abc9c !important;
         color: #fff !important;
         font-size: 1.1rem;
         box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
@@ -82,7 +170,7 @@
       }
       #mainNav .navbar-toggler:focus {
         outline: none;
-        background: #2980b9 !important;
+        background: #16a085 !important;
       }
       @media (max-width: 900px) {
         #mainNav .navbar-nav .nav-link {
@@ -129,199 +217,45 @@
         </div>
       </div>
     </nav>
-    <!-- Portfolio Section-->
+    <!-- Section des centres d'intérêt -->
     <section
-      class="page-section portfolio"
-      id="portfolio"
+      class="page-section bg-light"
+      id="interests"
       style="margin-top: 100px"
     >
       <div class="container">
+        <!-- Titre de la section -->
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
-          Mes Projets
+          Centres d'intérêt
         </h2>
+        <!-- Séparateur personnalisé -->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
           <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
           <div class="divider-custom-line"></div>
         </div>
-        <div class="row justify-content-center">
-          <!-- Projet 1 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://guide-pour-les-bacheliers.onrender.com"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="Guide en Ligne pour Nouveaux Bacheliers"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide en Ligne pour Nouveaux Bacheliers</h5>
-                <p>
-                  Développement d'une ressource web pour orienter les nouveaux
-                  étudiants.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 2 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/projet2/dialloa202100362"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Universitaire"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Universitaire</h5>
-                <p>
-                  Déploiement d'une plateforme web dans le cadre du projet
-                  universitaire.
-                </p>
-                <a
-                  href="https://samacv.net/2023_2024/projet2/dialloa202100362"
-                  target="_blank"
-                  >Version 1</a
-                >
-                |
-                <a href="https://dialloa202100362.onrender.com/" target="_blank"
-                  >Version 2</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Projet 3 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/guide_bacheliers/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/circus.png"
-                  alt="Guide Bacheliers (Version 2)"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide Bacheliers (Version 2)</h5>
-                <p>Version améliorée du guide pour les bacheliers.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 4 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="portfolio-item mx-auto">
-              <a href="https://tailleur-kidira.onrender.com/" target="_blank">
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/game.png"
-                  alt="Application Tailleur"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Application Tailleur</h5>
-                <p>Site vitrine pour un tailleur basé à Kidira.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 5 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-tv-show-adviser-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/safe.png"
-                  alt="React TV Show Adviser"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React TV Show Adviser</h5>
-                <p>Application React pour recommander des séries TV.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-expense-tracker-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/submarine.png"
-                  alt="React Expense Tracker"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Expense Tracker</h5>
-                <p>Application React pour la gestion des dépenses.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 7 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-notes-manager-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="React Notes Manager"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Notes Manager</h5>
-                <p>Application React pour la gestion des notes personnelles.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 8 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://docs.google.com/document/d/1j7NxyXKwWUwDEpxuily6HOkXvwCMwZsDTjy-5h_q2VM/edit?tab=t.0#heading=h.avwmrca0ovmr"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Data Engineering"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Data Engineering</h5>
-                <p>
-                  Construction d'un pipeline de données pour analyser les
-                  tendances du trafic Web.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Liste des intérêts -->
+        <ul>
+          <li>Technologies émergentes : IA, Big Data, et innovation.</li>
+          <li>Programmation et développement : Développement logiciel.</li>
+          <li>
+            Mathématiques appliquées : Algèbre linéaire et statistiques pour
+            l'IA.
+          </li>
+          <li>
+            Veille technologique : Suivi des tendances en Data Science et IA.
+          </li>
+          <li>Activités sportives et culturelles : Football.</li>
+        </ul>
       </div>
     </section>
-    <!-- Footer amélioré -->
+    <!-- Pied de page stylisé -->
     <footer
       class="footer text-center"
       style="
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%);
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%);
         color: #fff;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
@@ -330,11 +264,12 @@
     >
       <div class="container py-5">
         <div class="row">
-          <!-- Footer Location-->
+          <!-- Colonne localisation -->
           <div
             class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
           >
             <div class="mb-3">
+              <!-- Icône localisation -->
               <i class="fas fa-map-marker-alt fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -342,11 +277,12 @@
             </h4>
             <p class="lead mb-0">Thiès, Sénégal</p>
           </div>
-          <!-- Footer Social Icons-->
+          <!-- Colonne contact -->
           <div
             class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
           >
             <div class="mb-3">
+              <!-- Icône email -->
               <i class="fas fa-envelope fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -380,9 +316,10 @@
               </a>
             </p>
           </div>
-          <!-- Footer About Text-->
+          <!-- Colonne à propos -->
           <div class="col-lg-4 d-flex flex-column align-items-center">
             <div class="mb-3">
+              <!-- Icône étudiant -->
               <i class="fas fa-user-graduate fa-2x" style="color: #fff"></i>
             </div>
             <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
@@ -395,6 +332,7 @@
             </p>
           </div>
         </div>
+        <!-- Ligne de séparation -->
         <hr
           style="
             border-top: 1px solid #fff;
@@ -402,6 +340,7 @@
             margin: 2.5rem 0 1.5rem 0;
           "
         />
+        <!-- Section copyright -->
         <div class="copyright py-2 text-center text-white">
           <small style="letter-spacing: 1px"
             >&copy; 2024 Abdoul Salam DIALLO. Tous droits réservés.</small
@@ -409,9 +348,9 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS : gestion du menu responsive et des composants -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS : script personnalisé du thème -->
     <script src="js/scripts.js"></script>
   </body>
 </html>

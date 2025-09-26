@@ -6,9 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Projets de Abdoul Salam DIALLO" />
+    <meta name="description" content="Langues de Abdoul Salam DIALLO" />
     <meta name="author" content="Abdoul Salam DIALLO" />
-    <title>Projets - Portfolio Abdoul Salam DIALLO</title>
+    <title>Langues - Portfolio Abdoul Salam DIALLO</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -22,11 +22,86 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/styleMenu.css" rel="stylesheet" />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
     <style>
+      /* Section langues améliorée */
+      #languages {
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        background: #f8f9fa;
+      }
+      #languages h2 {
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+      #languages .divider-custom-icon {
+        color: #1abc9c;
+      }
+      #languages ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+        margin-top: 2rem;
+      }
+      #languages li {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+        padding: 1.2rem 1rem 1rem 1rem;
+        margin-bottom: 1rem;
+        width: 260px;
+        max-width: 95vw;
+        text-align: center;
+        font-size: 1.13rem;
+        color: #2c3e50;
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+      }
+      #languages li:before {
+        content: "🌐";
+        color: #1abc9c;
+        position: absolute;
+        left: 18px;
+        top: 12px;
+        font-size: 1.1rem;
+        opacity: 0.7;
+      }
+      #languages li:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+        background: #e8f6f3;
+      }
+      @media (max-width: 900px) {
+        #languages ul {
+          flex-direction: column;
+          align-items: center;
+        }
+        #languages li {
+          width: 98vw;
+        }
+      }
+      /* Footer stylé */
+      .footer {
+        background: #2c3e50;
+        color: #fff;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+      }
+      .footer a {
+        color: #1abc9c;
+        text-decoration: underline;
+      }
+      .footer a:hover {
+        color: #16a085;
+      }
+      .copyright {
+        background: #1a252f;
+      }
       /* Menu navbar amélioré */
       /* Menu navbar amélioré */
       nav.navbar {
@@ -44,7 +119,7 @@
       /* Menu navbar amélioré */
       #mainNav {
         box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%) !important;
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%) !important;
         border-bottom-left-radius: 18px;
         border-bottom-right-radius: 18px;
         transition: background 0.3s;
@@ -74,7 +149,7 @@
       }
       #mainNav .navbar-toggler {
         border: none;
-        background: #2980b9 !important;
+        background: #1abc9c !important;
         color: #fff !important;
         font-size: 1.1rem;
         box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
@@ -82,7 +157,7 @@
       }
       #mainNav .navbar-toggler:focus {
         outline: none;
-        background: #2980b9 !important;
+        background: #16a085 !important;
       }
       @media (max-width: 900px) {
         #mainNav .navbar-nav .nav-link {
@@ -129,199 +204,32 @@
         </div>
       </div>
     </nav>
-    <!-- Portfolio Section-->
-    <section
-      class="page-section portfolio"
-      id="portfolio"
-      style="margin-top: 100px"
-    >
+    <!-- Languages Section-->
+    <section class="page-section" id="languages" style="margin-top: 100px">
       <div class="container">
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
-          Mes Projets
+          Langues
         </h2>
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
           <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
           <div class="divider-custom-line"></div>
         </div>
-        <div class="row justify-content-center">
-          <!-- Projet 1 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://guide-pour-les-bacheliers.onrender.com"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="Guide en Ligne pour Nouveaux Bacheliers"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide en Ligne pour Nouveaux Bacheliers</h5>
-                <p>
-                  Développement d'une ressource web pour orienter les nouveaux
-                  étudiants.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 2 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/projet2/dialloa202100362"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Universitaire"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Universitaire</h5>
-                <p>
-                  Déploiement d'une plateforme web dans le cadre du projet
-                  universitaire.
-                </p>
-                <a
-                  href="https://samacv.net/2023_2024/projet2/dialloa202100362"
-                  target="_blank"
-                  >Version 1</a
-                >
-                |
-                <a href="https://dialloa202100362.onrender.com/" target="_blank"
-                  >Version 2</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Projet 3 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/guide_bacheliers/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/circus.png"
-                  alt="Guide Bacheliers (Version 2)"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide Bacheliers (Version 2)</h5>
-                <p>Version améliorée du guide pour les bacheliers.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 4 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="portfolio-item mx-auto">
-              <a href="https://tailleur-kidira.onrender.com/" target="_blank">
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/game.png"
-                  alt="Application Tailleur"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Application Tailleur</h5>
-                <p>Site vitrine pour un tailleur basé à Kidira.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 5 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-tv-show-adviser-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/safe.png"
-                  alt="React TV Show Adviser"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React TV Show Adviser</h5>
-                <p>Application React pour recommander des séries TV.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-expense-tracker-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/submarine.png"
-                  alt="React Expense Tracker"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Expense Tracker</h5>
-                <p>Application React pour la gestion des dépenses.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 7 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-notes-manager-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="React Notes Manager"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Notes Manager</h5>
-                <p>Application React pour la gestion des notes personnelles.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 8 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://docs.google.com/document/d/1j7NxyXKwWUwDEpxuily6HOkXvwCMwZsDTjy-5h_q2VM/edit?tab=t.0#heading=h.avwmrca0ovmr"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Data Engineering"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Data Engineering</h5>
-                <p>
-                  Construction d'un pipeline de données pour analyser les
-                  tendances du trafic Web.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ul>
+          <li>Français : Langue officielle</li>
+          <li>Anglais : Intermédiaire</li>
+          <li>Wolof : Langue nationale</li>
+          <li>Poular : Langue maternelle</li>
+        </ul>
       </div>
     </section>
     <!-- Footer amélioré -->
     <footer
       class="footer text-center"
       style="
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%);
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%);
         color: #fff;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;

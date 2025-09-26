@@ -6,9 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Projets de Abdoul Salam DIALLO" />
+    <meta name="description" content="Contactez Abdoul Salam DIALLO" />
     <meta name="author" content="Abdoul Salam DIALLO" />
-    <title>Projets - Portfolio Abdoul Salam DIALLO</title>
+    <title>Contact - Portfolio Abdoul Salam DIALLO</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -22,11 +22,94 @@
     />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/styleMenu.css" rel="stylesheet" />
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
     <style>
+      /* Amélioration de la section contact */
+      #contact {
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        background: #f8f9fa;
+      }
+      #contact h2 {
+        letter-spacing: 2px;
+        font-weight: 700;
+      }
+      #contact .divider-custom-icon {
+        color: #1abc9c;
+      }
+      #contact ul {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+      }
+      #contact li {
+        font-size: 1.15rem;
+        margin-bottom: 1.2rem;
+        color: #2c3e50;
+      }
+      #contact a {
+        color: #1abc9c;
+        text-decoration: underline;
+      }
+      #contact a:hover {
+        color: #16a085;
+      }
+      /* Formulaire */
+      #contact form {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+        padding: 2rem 1.5rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      #contact .form-label {
+        font-weight: 600;
+        color: #2c3e50;
+      }
+      #contact .btn-primary {
+        background: #1abc9c;
+        border: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-radius: 30px;
+        padding: 0.7rem 2.2rem;
+        transition: background 0.2s;
+      }
+      #contact .btn-primary:hover {
+        background: #16a085;
+      }
+      /* Footer stylé */
+      .footer {
+        background: #2c3e50;
+        color: #fff;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+      }
+      .footer a {
+        color: #1abc9c;
+        text-decoration: underline;
+      }
+      .footer a:hover {
+        color: #16a085;
+      }
+      .copyright {
+        background: #1a252f;
+      }
+      /* Responsive */
+      @media (max-width: 900px) {
+        #contact ul,
+        #contact form {
+          padding: 1rem 0.5rem;
+        }
+        .footer .row > div {
+          margin-bottom: 2rem;
+        }
+      }
       /* Menu navbar amélioré */
       /* Menu navbar amélioré */
       nav.navbar {
@@ -44,7 +127,7 @@
       /* Menu navbar amélioré */
       #mainNav {
         box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%) !important;
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%) !important;
         border-bottom-left-radius: 18px;
         border-bottom-right-radius: 18px;
         transition: background 0.3s;
@@ -74,7 +157,7 @@
       }
       #mainNav .navbar-toggler {
         border: none;
-        background: #2980b9 !important;
+        background: #1abc9c !important;
         color: #fff !important;
         font-size: 1.1rem;
         box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
@@ -82,7 +165,7 @@
       }
       #mainNav .navbar-toggler:focus {
         outline: none;
-        background: #2980b9 !important;
+        background: #16a085 !important;
       }
       @media (max-width: 900px) {
         #mainNav .navbar-nav .nav-link {
@@ -129,17 +212,13 @@
         </div>
       </div>
     </nav>
-    <!-- Portfolio Section-->
-    <section
-      class="page-section portfolio"
-      id="portfolio"
-      style="margin-top: 100px"
-    >
+    <!-- Contact Section-->
+    <section class="page-section" id="contact" style="margin-top: 100px">
       <div class="container">
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
-          Mes Projets
+          Contactez-moi
         </h2>
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
@@ -147,172 +226,76 @@
           <div class="divider-custom-line"></div>
         </div>
         <div class="row justify-content-center">
-          <!-- Projet 1 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://guide-pour-les-bacheliers.onrender.com"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="Guide en Ligne pour Nouveaux Bacheliers"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide en Ligne pour Nouveaux Bacheliers</h5>
-                <p>
-                  Développement d'une ressource web pour orienter les nouveaux
-                  étudiants.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 2 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/projet2/dialloa202100362"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Universitaire"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Universitaire</h5>
-                <p>
-                  Déploiement d'une plateforme web dans le cadre du projet
-                  universitaire.
-                </p>
+          <div class="col-lg-8 col-xl-7">
+            <ul class="list-unstyled text-center">
+              <li class="mb-3">
+                <i class="fas fa-envelope fa-fw"></i>
+                <strong>Email :</strong>
+                <a href="mailto:abdoulsalam142@gmail.com"
+                  >abdoulsalam142@gmail.com</a
+                >
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone fa-fw"></i>
+                <strong>Téléphone :</strong>
+                <a href="tel:+221781209169">+221 78 120 91 69</a>
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <strong>Localisation :</strong> Thiès, Sénégal
+              </li>
+              <li class="mb-3">
+                <i class="fab fa-github fa-fw"></i>
+                <strong>GitHub :</strong>
                 <a
-                  href="https://samacv.net/2023_2024/projet2/dialloa202100362"
+                  href="https://github.com/AbdoulSalam407"
                   target="_blank"
-                  >Version 1</a
+                  rel="noopener noreferrer"
                 >
-                |
-                <a href="https://dialloa202100362.onrender.com/" target="_blank"
-                  >Version 2</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Projet 3 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://samacv.net/2023_2024/guide_bacheliers/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/circus.png"
-                  alt="Guide Bacheliers (Version 2)"
+                  github.com/AbdoulSalam407
+                </a>
+              </li>
+            </ul>
+            <!-- Formulaire de contact -->
+            <form
+              action="mailto:abdoulsalam142@gmail.com"
+              method="POST"
+              enctype="text/plain"
+              class="mb-4"
+              style="max-width: 600px; margin: auto"
+            >
+              <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nom"
+                  name="Nom"
+                  required
                 />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Guide Bacheliers (Version 2)</h5>
-                <p>Version améliorée du guide pour les bacheliers.</p>
               </div>
-            </div>
-          </div>
-          <!-- Projet 4 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="portfolio-item mx-auto">
-              <a href="https://tailleur-kidira.onrender.com/" target="_blank">
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/game.png"
-                  alt="Application Tailleur"
+              <div class="mb-3">
+                <label for="email" class="form-label">Adresse Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="Email"
+                  required
                 />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Application Tailleur</h5>
-                <p>Site vitrine pour un tailleur basé à Kidira.</p>
               </div>
-            </div>
-          </div>
-          <!-- Projet 5 -->
-          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-tv-show-adviser-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/safe.png"
-                  alt="React TV Show Adviser"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React TV Show Adviser</h5>
-                <p>Application React pour recommander des séries TV.</p>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="Message"
+                  rows="5"
+                  required
+                ></textarea>
               </div>
-            </div>
-          </div>
-          <!-- Projet 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-expense-tracker-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/submarine.png"
-                  alt="React Expense Tracker"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Expense Tracker</h5>
-                <p>Application React pour la gestion des dépenses.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 7 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://react-notes-manager-abdoul-salam-diallo.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cabin.png"
-                  alt="React Notes Manager"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>React Notes Manager</h5>
-                <p>Application React pour la gestion des notes personnelles.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Projet 8 -->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto">
-              <a
-                href="https://docs.google.com/document/d/1j7NxyXKwWUwDEpxuily6HOkXvwCMwZsDTjy-5h_q2VM/edit?tab=t.0#heading=h.avwmrca0ovmr"
-                target="_blank"
-              >
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/cake.png"
-                  alt="Projet Data Engineering"
-                />
-              </a>
-              <div class="text-center mt-2">
-                <h5>Projet Data Engineering</h5>
-                <p>
-                  Construction d'un pipeline de données pour analyser les
-                  tendances du trafic Web.
-                </p>
-              </div>
-            </div>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
           </div>
         </div>
       </div>
@@ -321,7 +304,7 @@
     <footer
       class="footer text-center"
       style="
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%);
+        background: linear-gradient(90deg, #1abc9c 0%, #2980b9 100%);
         color: #fff;
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
