@@ -15,306 +15,387 @@
     <!-- Favicon (icône de l'onglet du navigateur) -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
-    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
     />
     <!-- FontAwesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link href="css/portfolio.css" rel="stylesheet" />
 
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      header.masthead {
-        padding-top: 8rem;
-        padding-bottom: 6rem;
-        text-align: center;
-        color: #fff;
-        background: linear-gradient(135deg, #20c997, #0d6efd);
-      }
-
-      header.masthead img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-        border: 4px solid #fff;
-      }
-
-      header.masthead h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-      }
-
-      .divider-custom {
-        margin: 1.25rem auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .divider-custom-line {
-        width: 100px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 1rem;
-        margin: 0 1rem;
-      }
-
-      .divider-custom-icon {
-        color: #fff;
-        font-size: 1.5rem;
-      }
-
-      .hero-buttons .btn {
-        border-radius: 30px;
-        font-weight: 600;
-        padding: 0.6rem 1.5rem;
-        transition: all 0.3s ease;
-      }
-
-      .hero-buttons .btn:hover {
-        background: #2980b9;
-        color: #fff;
-        box-shadow: 0 4px 16px rgba(44, 62, 80, 0.2);
-      }
-
-      nav.navbar {
-        background-color: transparent !important;
-      }
-
-      nav.navbar .nav-link {
-        color: white !important;
-        font-weight: 500;
-      }
-
-      nav.navbar .nav-link:hover {
-        color: #d1ecf1 !important;
-      }
-      /* Menu navbar amélioré */
-      #mainNav {
-        box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%) !important;
-        border-bottom-left-radius: 18px;
-        border-bottom-right-radius: 18px;
-        transition: background 0.3s;
-      }
-      #mainNav .navbar-brand {
-        font-weight: 900;
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-        color: #fff !important;
-        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
-      }
-      #mainNav .navbar-nav .nav-link {
-        color: #fff !important;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin: 0 0.5rem;
-        border-radius: 30px;
-        padding: 0.5rem 1.2rem;
-        transition: background 0.2s, color 0.2s;
-      }
-      #mainNav .navbar-nav .nav-link:hover,
-      #mainNav .navbar-nav .nav-link.active {
-        background: #fff;
-        color: #1abc9c !important;
-        text-decoration: none;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-      }
-      #mainNav .navbar-toggler {
-        border: none;
-        background: #1abc9c !important;
-        color: #fff !important;
-        font-size: 1.1rem;
-        box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
-        transition: background 0.2s;
-      }
-      #mainNav .navbar-toggler:focus {
-        outline: none;
-        background: #16a085 !important;
-      }
-      @media (max-width: 900px) {
-        #mainNav .navbar-nav .nav-link {
-          margin: 0.2rem 0;
-          padding: 0.7rem 1.2rem;
-        }
-        #mainNav {
-          border-radius: 0 0 12px 12px;
-        }
-      }
-    </style>
+    
   </head>
   <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Portfolio</a>
-        <button
-          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="projets.html">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Formations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="attestations.html">Attestations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav id="mainNav">
+      <div class="container nav-inner">
+        <a class="brand" href="#page-top">DIALLO <span class="brand-accent">Abdoul Salam</span></a>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle">Menu</label>
+
+        <ul class="nav-links">
+          <li><a href="#page-top">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
     <!-- HERO -->
     <header class="masthead">
       <div class="container">
-        <img src="images/profil.png" alt="Photo Abdoul Salam DIALLO" />
-        <h1>Abdoul Salam DIALLO</h1>
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          <i class="fas fa-star divider-custom-icon"></i>
-          <div class="divider-custom-line"></div>
-        </div>
-        <p>
-          Étudiant en Master 1 - Ingénierie des Données & Intelligence
-          Artificielle
-        </p>
+        <div class="grid grid-2">
+          <div>
+            <h1>
+              Je suis <span class="hero-accent">Abdoul Salam DIALLO</span>,
+              Développeur en devenir passionné par le web et le design et l'IA!
+            </h1>
+            <p class="meta">
+              Étudiant en Master 1 - Ingénierie des Données & Intelligence
+              Artificielle.
+            </p>
 
-        <!-- ✅ BOUTONS AJOUTÉS -->
-        <div class="hero-buttons mt-4">
-          <a href="about.html" class="btn btn-light mx-2">Voir mon profil</a>
-          <a href="languages.html" class="btn btn-light mx-2"
-            >Voir mes langues</a
-          >
-          <a href="interests.html" class="btn btn-light mx-2"
-            >Voir mes centres d'intérêt</a
-          >
+            <!-- ✅ BOUTONS AJOUTÉS -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+              <a href="monCV.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+            </div>
+          </div>
+          <div>
+            <img
+              class="hero-illustration"
+              src="assets/img/maxresdefault.jpg"
+              alt="Illustration"
+            />
+          </div>
         </div>
       </div>
     </header>
 
     <!-- SECTIONS -->
-    <!-- Pied de page stylisé -->
-    <footer
-      class="footer text-center"
-      style="
-        background: linear-gradient(90deg, #2980b9 0%, #2980b9 100%);
-        color: #fff;
-        border-top-left-radius: 24px;
-        border-top-right-radius: 24px;
-        box-shadow: 0 -4px 24px rgba(44, 62, 80, 0.1);
-      "
-    >
-      <div class="container py-5">
-        <div class="row">
-          <!-- Colonne localisation -->
-          <div
-            class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
-          >
-            <div class="mb-3">
-              <!-- Icône localisation -->
-              <i class="fas fa-map-marker-alt fa-2x" style="color: #fff"></i>
-            </div>
-            <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
-              Localisation
-            </h4>
-            <p class="lead mb-0">Thiès, Sénégal</p>
+    <section class="section section-muted" id="about">
+      <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <div class="grid grid-2">
+          <div>
+            <p>
+              Titulaire d'une licence en Mathématiques, Physique et Informatique
+              (spécialité Informatique) de l'Université Assane SECK de
+              Ziguinchor, je suis présentement en Master 1 en Ingénierie des
+              Données et Intelligence Artificielle à l'Université Iba Der THIAM
+              de Thiès.
+            </p>
+            <p>
+              Passionné par l'analyse des données et l'intelligence
+              artificielle, je m'intéresse particulièrement au Big Data, à
+              l'apprentissage automatique et aux systèmes distribués.
+            </p>
+            <a href="monCV.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
           </div>
-          <!-- Colonne contact -->
-          <div
-            class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center"
-          >
-            <div class="mb-3">
-              <!-- Icône email -->
-              <i class="fas fa-envelope fa-2x" style="color: #fff"></i>
-            </div>
-            <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
-              Contact
-            </h4>
-            <p class="lead mb-2">
-              <strong>Email :</strong>
-              <a
-                href="mailto:abdoulsalam142@gmail.com"
-                style="color: #fff; text-decoration: underline"
-                >abdoulsalam142@gmail.com</a
-              >
-            </p>
-            <p class="lead mb-2">
-              <strong>Téléphone :</strong>
-              <a
-                href="tel:+221781209169"
-                style="color: #fff; text-decoration: underline"
-                >+221 78 120 91 69</a
-              >
-            </p>
-            <p class="lead mb-0">
-              <strong>GitHub :</strong>
-              <a
-                href="https://github.com/AbdoulSalam407"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="color: #fff; text-decoration: underline"
-              >
-                github.com/AbdoulSalam407
-              </a>
-            </p>
-          </div>
-          <!-- Colonne à propos -->
-          <div class="col-lg-4 d-flex flex-column align-items-center">
-            <div class="mb-3">
-              <!-- Icône étudiant -->
-              <i class="fas fa-user-graduate fa-2x" style="color: #fff"></i>
-            </div>
-            <h4 class="text-uppercase mb-3" style="letter-spacing: 1px">
-              À propos
-            </h4>
-            <p class="lead mb-0" style="max-width: 320px">
-              Étudiant en Master 1 - Ingénierie des Données & Intelligence
-              Artificielle.<br />
-              Passionné par l’IA, le Big Data et l’innovation.
-            </p>
+          <div class="about-photo-wrap">
+            <img
+              class="about-photo"
+              src="images/profil.png"
+              alt="Photo Abdoul Salam DIALLO"
+            />
           </div>
         </div>
-        <!-- Ligne de séparation -->
-        <hr
-          style="
-            border-top: 1px solid #fff;
-            opacity: 0.2;
-            margin: 2.5rem 0 1.5rem 0;
-          "
-        />
-        <!-- Section copyright -->
-        <div class="copyright py-2 text-center text-white">
-          <small style="letter-spacing: 1px"
-            >&copy; 2024 Abdoul Salam DIALLO. Tous droits réservés.</small
-          >
+
+        <div class="grid grid-3 cards-spacing">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-center">Langues</h3>
+              <ul class="ul-compact">
+                <li>Français : Langue officielle</li>
+                <li>Anglais : Intermédiaire</li>
+                <li>Wolof : Langue nationale</li>
+                <li>Peul : Langue maternelle</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-center">Centres d'intérêt</h3>
+              <ul class="ul-compact">
+                <li>Technologies émergentes : IA, Big Data, innovation</li>
+                <li>Programmation et développement</li>
+                <li>Mathématiques appliquées : Algèbre linéaire, statistiques pour l'IA</li>
+                <li>Veille technologique : Data Science, IA, dev web</li>
+                <li>Football</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-center">Références</h3>
+              <p>
+                <strong>Dr Khadim DRAME</strong><br />Enseignant-chercheur en
+                Informatique, Université Assane Seck de Ziguinchor<br /><a
+                  href="mailto:kdrame@univ-zig.sn"
+                  >kdrame@univ-zig.sn</a
+                >
+              </p>
+              <p class="p-compact">
+                <strong>Amadou Sow</strong><br />Architecte Logiciel,
+                Développeur Full Stack & Mobile (React Native, Next.js, NestJS,
+                Laravel)<br />Gallima Tech, Gomycode<br /><a
+                  href="mailto:asow524@gmail.com"
+                  >asow524@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="grid grid-3">
+          <div class="card">
+              <img
+                src="assets/img/portfolio/cabin.png"
+                alt="Guide en Ligne pour Nouveaux Bacheliers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Guide en Ligne pour Nouveaux Bacheliers</h5>
+                <p class="meta">
+                  Développement d'une ressource web pour orienter les nouveaux
+                  étudiants.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  href="https://guide-pour-les-bacheliers.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir</a
+                >
+              </div>
+          </div>
+
+          <div class="card">
+              <img
+                src="assets/img/portfolio/AgriCom.png"
+                alt="Application de Commerce Agricole"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Application de Commerce Agricole</h5>
+                <p class="meta">
+                  Plateforme web pour la vente et l'achat de produits agricoles.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  href="https://agri-ecom-n7r1.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir</a
+                >
+              </div>
+          </div>
+
+          <div class="card">
+              <img
+                src="assets/img/portfolio/cabin1.png"
+                alt="Projet Data Engineering"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projet Data Engineering</h5>
+                <p class="meta">
+                  Construction d'un pipeline de données pour analyser les
+                  tendances du trafic Web.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  href="https://docs.google.com/document/d/1j7NxyXKwWUwDEpxuily6HOkXvwCMwZsDTjy-5h_q2VM/edit?tab=t.0#heading=h.avwmrca0ovmr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir</a
+                >
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <h2 class="section-title">Mes Compétences</h2>
+
+        <div class="grid grid-2" style="align-items: start;">
+          <div class="card">
+            <div class="card-body">
+              <h3 style="margin-top:0; text-align:center;">Soft Skills</h3>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Travail en équipe</span><span>90%</span>
+                </div>
+                <div class="progress"><div style="width: 90%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Autonomie</span><span>85%</span>
+                </div>
+                <div class="progress"><div style="width: 85%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Détermination</span><span>88%</span>
+                </div>
+                <div class="progress"><div style="width: 88%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 0;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Respect des autres</span><span>92%</span>
+                </div>
+                <div class="progress"><div style="width: 92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 style="margin-top:0; text-align:center;">Hard Skills</h3>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>HTML / CSS</span><span>85%</span>
+                </div>
+                <div class="progress"><div style="width: 85%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>JavaScript / TypeScript</span><span>78%</span>
+                </div>
+                <div class="progress"><div style="width: 78%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>ReactJS</span><span>72%</span>
+                </div>
+                <div class="progress"><div style="width: 72%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Python (Django, Flask)</span><span>70%</span>
+                </div>
+                <div class="progress"><div style="width: 70%"></div></div>
+              </div>
+
+              <div style="margin-bottom: 0;">
+                <div style="display:flex; justify-content:space-between; font-weight:700; margin-bottom: 0.35rem;">
+                  <span>Data Engineering (Hadoop, Spark, Hive, NiFi)</span><span>65%</span>
+                </div>
+                <div class="progress"><div style="width: 65%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="contact-title">
+          Vous avez un <span class="accent">projet</span> en tête ?<br />
+          N'hésitez pas à me <span class="accent">contacter</span>
+        </h2>
+
+        <div class="contact-wrap">
+          <div class="contact-box">
+            <form id="contactForm" class="form contact-form">
+              <div class="grid grid-2 grid-start">
+                <div>
+                  <label for="firstName">Votre prénom</label>
+                  <input class="field" id="firstName" name="firstName" type="text" required />
+                </div>
+                <div>
+                  <label for="lastName">Votre nom</label>
+                  <input class="field" id="lastName" name="lastName" type="text" required />
+                </div>
+                <div class="span-all">
+                  <label for="subject">Votre sujet</label>
+                  <input class="field" id="subject" name="subject" type="text" required />
+                </div>
+                <div class="span-all">
+                  <label for="message">Votre message</label>
+                  <textarea class="field" id="message" name="message" rows="7" required></textarea>
+                </div>
+                <div class="span-all center">
+                  <button class="btn btn-primary" type="submit">Envoyer</button>
+                </div>
+              </div>
+              <div id="contactFeedback" class="contact-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-bar">
+      <div class="container footer-bar-inner">
+        <div class="footer-left">
+          Designed by <a class="footer-link" href="#page-top">Abdoul Salam diallo</a> with HTML CSS JS
+        </div>
+        <div class="footer-right">Tous droits réservés - 2026</div>
+      </div>
     </footer>
-    <!-- Bootstrap core JS : gestion du menu responsive et des composants -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS : script personnalisé du thème -->
     <script src="js/scripts.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+        const feedback = document.getElementById("contactFeedback");
+
+        if (!form || !feedback) {
+          return;
+        }
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const firstName = document.getElementById("firstName");
+          const lastName = document.getElementById("lastName");
+          const subject = document.getElementById("subject");
+          const message = document.getElementById("message");
+
+          if (!firstName || !lastName || !subject || !message) {
+            return;
+          }
+
+          const mailto = new URL("mailto:abdoulsalam142@gmail.com");
+          mailto.searchParams.set(
+            "subject",
+            `[Portfolio] ${subject.value} - ${firstName.value} ${lastName.value}`
+          );
+          mailto.searchParams.set("body", message.value);
+
+          feedback.style.display = "block";
+          feedback.textContent =
+            "Votre application mail va s'ouvrir pour envoyer le message.";
+
+          window.location.href = mailto.toString();
+        });
+      });
+    </script>
   </body>
 </html>
