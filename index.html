@@ -699,7 +699,13 @@
 
         <div class="contact-wrap">
           <div class="contact-box">
-            <form id="contactForm" class="form contact-form">
+            <div data-fs-success style="display: none; color: #1abc9c; margin-bottom: 1rem; text-align: center; font-weight: bold;">
+              ✅ Votre message a été envoyé avec succès! Je vous répondrai bientôt.
+            </div>
+            <div data-fs-error style="display: none; color: #e74c3c; margin-bottom: 1rem; text-align: center;">
+            </div>
+            
+            <form id="my-form" class="form contact-form">
               <div class="grid grid-2 grid-start">
                 <div>
                   <label for="firstName">Votre prénom</label>
@@ -708,8 +714,10 @@
                     id="firstName"
                     name="firstName"
                     type="text"
+                    data-fs-field
                     required
                   />
+                  <span data-fs-error="firstName" style="color: #e74c3c; font-size: 0.85rem;"></span>
                 </div>
                 <div>
                   <label for="lastName">Votre nom</label>
@@ -718,8 +726,22 @@
                     id="lastName"
                     name="lastName"
                     type="text"
+                    data-fs-field
                     required
                   />
+                  <span data-fs-error="lastName" style="color: #e74c3c; font-size: 0.85rem;"></span>
+                </div>
+                <div class="span-all">
+                  <label for="email">Votre email</label>
+                  <input
+                    class="field"
+                    id="email"
+                    name="email"
+                    type="email"
+                    data-fs-field
+                    required
+                  />
+                  <span data-fs-error="email" style="color: #e74c3c; font-size: 0.85rem;"></span>
                 </div>
                 <div class="span-all">
                   <label for="subject">Votre sujet</label>
@@ -728,8 +750,10 @@
                     id="subject"
                     name="subject"
                     type="text"
+                    data-fs-field
                     required
                   />
+                  <span data-fs-error="subject" style="color: #e74c3c; font-size: 0.85rem;"></span>
                 </div>
                 <div class="span-all">
                   <label for="message">Votre message</label>
@@ -738,14 +762,15 @@
                     id="message"
                     name="message"
                     rows="7"
+                    data-fs-field
                     required
                   ></textarea>
+                  <span data-fs-error="message" style="color: #e74c3c; font-size: 0.85rem;"></span>
                 </div>
                 <div class="span-all center">
-                  <button class="btn btn-primary" type="submit">Envoyer</button>
+                  <button class="btn btn-primary" type="submit" data-fs-submit-btn>Envoyer</button>
                 </div>
               </div>
-              <div id="contactFeedback" class="contact-feedback"></div>
             </form>
           </div>
         </div>
@@ -764,41 +789,11 @@
     </footer>
     <!-- Core theme JS : script personnalisé du thème -->
     <script src="js/scripts.js"></script>
+    <!-- FormSpree Integration -->
     <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const form = document.getElementById("contactForm");
-        const feedback = document.getElementById("contactFeedback");
-
-        if (!form || !feedback) {
-          return;
-        }
-
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-
-          const firstName = document.getElementById("firstName");
-          const lastName = document.getElementById("lastName");
-          const subject = document.getElementById("subject");
-          const message = document.getElementById("message");
-
-          if (!firstName || !lastName || !subject || !message) {
-            return;
-          }
-
-          const mailto = new URL("mailto:abdoulsalam142@gmail.com");
-          mailto.searchParams.set(
-            "subject",
-            `[Portfolio] ${subject.value} - ${firstName.value} ${lastName.value}`,
-          );
-          mailto.searchParams.set("body", message.value);
-
-          feedback.style.display = "block";
-          feedback.textContent =
-            "Votre application mail va s'ouvrir pour envoyer le message.";
-
-          window.location.href = mailto.toString();
-        });
-      });
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#my-form', formId: 'xbdqarvp' });
     </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>
