@@ -340,6 +340,18 @@ header.masthead .hero-illustration {
   margin: 0 0 2rem;
 }
 
+.contact-alt {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin: -1.25rem 0 2rem;
+}
+
+.contact-alt-link {
+  color: var(--brand);
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .accent {
   color: var(--brand);
 }
@@ -428,6 +440,9 @@ header.masthead .hero-illustration {
 .about-photo-wrap {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
 }
 
 .about-photo {
@@ -436,6 +451,51 @@ header.masthead .hero-illustration {
   object-fit: cover;
   border: 6px solid var(--brand);
   border-radius: 999px;
+}
+
+.social-under-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.12);
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.95);
+}
+
+.social-icon i {
+  font-size: 1.15rem;
+}
+
+.social-whatsapp {
+  background: #25d366;
+}
+
+.social-linkedin {
+  background: #0a66c2;
+}
+
+.social-facebook {
+  background: #1877f2;
+}
+
+.social-github {
+  background: #111827;
 }
 
 .cards-spacing {
