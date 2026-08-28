@@ -1,0 +1,24 @@
+Liste des fichiers d'attestation attendus (placez-les dans ce dossier pour que les liens fonctionnent) :
+
+- aws_academy_attestation.png
+- dclic_attestation.png
+- dclic_developpement_web_attestation.png
+- dclic_mobile_intermediaire_attestation.png
+- dclic_mobile_debutant_attestation.png
+- onfp_frontend_attestation.png
+- africonnect_iot_attestation.png
+- africonnect_lorawan_attestation.png
+- africonnect_ai_attestation.png
+- africonnect_datamining_attestation.png
+- python_kaggle_attestation.png
+- data_engineering_force_n_attestation.png
+- ia_pour_tous_force_n_attestation.png
+
+Recommandations :
+- Formats acceptés : PNG, JPG ou PDF.
+- Noms de fichiers exactement comme ci‑dessus.
+- Taille recommandée : largeur 1200px, optimisation web (compression < 300 KB) pour de meilleures performances.
+
+Si tu veux, je peux :
+- ajouter les fichiers si tu les téléverses ici, ou
+- remplacer certains liens par des URLs externes si tu préfères héberger les attestations ailleurs.

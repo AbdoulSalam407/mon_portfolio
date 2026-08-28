@@ -1,0 +1,10 @@
+Placez l'image du certificat fournie (fichier PNG/JPG) dans ce dossier et renommez-la :
+
+aws_academy_certificate.png
+
+Recommandation : 1200×800 px (ou largeur 1200 px), optimisation web (compression < 200 KB) pour de meilleures performances.
+
+Le fichier est utilisé depuis `index.html` par :
+assets/img/portfolio/aws_academy_certificate.png
+
+Si vous souhaitez que je récupère et ajoute l'image pour vous, uploadez le fichier image dans la conversation ou autorisez l'accès au fichier ici.
